@@ -1,9 +1,7 @@
-// services/api.js
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://bloghub1.onrender.com';
 
-// Create axios instance
 const api = axios.create({
   baseURL: API_URL,
   headers: {
@@ -11,7 +9,6 @@ const api = axios.create({
   },
 });
 
-// Add token to requests if available
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
@@ -25,14 +22,12 @@ api.interceptors.request.use(
   }
 );
 
-// Auth APIs
 export const authAPI = {
   register: (userData) => api.post('/auth/register', userData),
   login: (credentials) => api.post('/auth/login', credentials),
   getMe: () => api.get('/auth/me'),
 };
 
-// Blog APIs
 export const blogAPI = {
   getAllBlogs: () => api.get('/blogs'),
   getBlogById: (id) => api.get(`/blogs/${id}`),
@@ -43,7 +38,6 @@ export const blogAPI = {
   likeBlog: (id) => api.put(`/blogs/${id}/like`),
 };
 
-// User APIs
 export const userAPI = {
   getUserProfile: (id) => api.get(`/users/${id}`),
   updateProfile: (profileData) => api.put('/users/profile', profileData),
