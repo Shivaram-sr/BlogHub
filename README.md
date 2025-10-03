@@ -3,7 +3,9 @@ A modern, feature-rich blogging platform built with the MERN stack (MongoDB, Exp
 
 ## 🌐 Live Demo
 Frontend: https://bloghub-1-rloa.onrender.com
+
 Backend API: https://bloghub-backend-fk08.onrender.com
+
 API Documentation: API Endpoints
 
 ## ✨ Features
@@ -34,6 +36,7 @@ Loading states and error handling
 Image preview in blog editor
 
 ## 🗂️ Project Structure
+
 bloghub/
 ├── backend/                    # Backend API
 │   ├── config/
