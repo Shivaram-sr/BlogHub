@@ -6,8 +6,6 @@ Frontend: https://bloghub-1-rloa.onrender.com
 
 Backend API: https://bloghub-backend-fk08.onrender.com
 
-API Documentation: API Endpoints
-
 ## ✨ Features
 ### 🔐 Authentication & Security
 User registration and login with JWT authentication
@@ -38,38 +36,37 @@ Image preview in blog editor
 ## 🗂️ Project Structure
 
 bloghub/
-├── backend/                    # Backend API
+├── backend/              # Backend API
 │   ├── config/
-│   │   └── db.js              # MongoDB connection
+│   │   └── db.js         # MongoDB connection
 │   ├── controllers/
-│   │   ├── authController.js  # Authentication logic
-│   │   ├── blogController.js  # Blog CRUD operations
-│   │   └── userController.js  # User profile & social features
+│   │   ├── authController.js   # Authentication logic
+│   │   ├── blogController.js   # Blog CRUD operations
+│   │   └── userController.js   # User profile & social features
 │   ├── middleware/
-│   │   └── auth.js            # JWT verification middleware
+│   │   └── auth.js       # JWT verification middleware
 │   ├── models/
-│   │   ├── User.js            # User schema (auth, avatar, followers)
-│   │   └── Blog.js            # Blog schema (content, likes, views)
+│   │   ├── User.js       # User schema (auth, avatar, followers)
+│   │   └── Blog.js       # Blog schema (content, likes, views)
 │   ├── routes/
-│   │   ├── auth.js            # Auth routes
-│   │   ├── blogs.js           # Blog routes
-│   │   └── users.js           # User routes
-│   ├── .env                   # Environment variables (not in git)
-│   ├── .gitignore            # Git ignore file
-│   ├── server.js             # Express app setup
-│   └── package.json          # Backend dependencies
-│
-├── client/                    # React Frontend
+│   │   ├── auth.js       # Auth routes
+│   │   ├── blogs.js      # Blog routes
+│   │   └── users.js      # User routes
+│   ├── .env              # Environment variables (not in git)
+│   ├── .gitignore        # Git ignore file
+│   ├── server.js         # Express app setup
+│   └── package.json      # Backend dependencies
+├── client/               # React Frontend
 │   ├── public/
 │   │   └── index.html
 │   ├── src/
-│   │   ├── components/       # Reusable components
+│   │   ├── components/   # Reusable components
 │   │   │   ├── Navbar.jsx
 │   │   │   ├── Navbar.css
 │   │   │   ├── BlogCard.jsx
 │   │   │   ├── BlogCard.css
 │   │   │   └── ProtectedRoute.jsx
-│   │   ├── pages/           # Page components
+│   │   ├── pages/        # Page components
 │   │   │   ├── Home.jsx
 │   │   │   ├── Home.css
 │   │   │   ├── Login.jsx
@@ -83,18 +80,17 @@ bloghub/
 │   │   │   ├── MyBlogs.jsx
 │   │   │   └── MyBlogs.css
 │   │   ├── context/
-│   │   │   └── AuthContext.jsx  # Global auth state
+│   │   │   └── AuthContext.jsx   # Global auth state
 │   │   ├── services/
-│   │   │   └── api.js           # Axios API configuration
-│   │   ├── App.jsx              # Main app component
-│   │   ├── App.css              # Global styles
-│   │   ├── index.js             # Entry point
-│   │   └── index.css            # Base styles
+│   │   │   └── api.js            # Axios API configuration
+│   │   ├── App.jsx               # Main app component
+│   │   ├── App.css               # Global styles
+│   │   ├── index.js              # Entry point
+│   │   └── index.css             # Base styles
 │   ├── .gitignore
-│   └── package.json             # Frontend dependencies
-│
-├── .gitignore                   # Root gitignore
-└── README.md                    # This file
+│   └── package.json              # Frontend dependencies
+├── .gitignore                    # Root gitignore
+└── README.md                     # This file
 
 ## Built with ❤️ using the MERN Stack
 Happy Blogging! 🚀📝
