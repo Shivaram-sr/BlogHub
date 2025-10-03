@@ -36,7 +36,7 @@ Image preview in blog editor
 ## 🗂️ Project Structure
 
 ```text
-bloghub/
+BlogHub/
 ├── backend/                  # Backend API
 │   ├── config/
 │   │   └── db.js             # MongoDB connection
@@ -58,44 +58,42 @@ bloghub/
 │   ├── server.js             # Express app setup
 │   └── package.json          # Backend dependencies
 │
-├── client/                   # React Frontend
+├── fronted/                  # React Frontend
 │   ├── public/
 │   │   └── index.html        # Root HTML file
 │   ├── src/
 │   │   ├── components/       # Reusable components
 │   │   │   ├── Navbar.jsx
-│   │   │   ├── Navbar.css
 │   │   │   ├── BlogCard.jsx
-│   │   │   ├── BlogCard.css
 │   │   │   └── ProtectedRoute.jsx
 │   │   ├── pages/            # Page components
 │   │   │   ├── Home.jsx
-│   │   │   ├── Home.css
 │   │   │   ├── Login.jsx
 │   │   │   ├── Register.jsx
-│   │   │   ├── Auth.css
 │   │   │   ├── CreateBlog.jsx
 │   │   │   ├── EditBlog.jsx
-│   │   │   ├── BlogForm.css
 │   │   │   ├── BlogDetail.jsx
-│   │   │   ├── BlogDetail.css
-│   │   │   ├── MyBlogs.jsx
-│   │   │   └── MyBlogs.css
+│   │   │   └── MyBlogs.jsx
 │   │   ├── context/
 │   │   │   └── AuthContext.jsx # Global auth state
 │   │   ├── services/
 │   │   │   └── api.js          # Axios API configuration
+│   │   ├── styles/             # Centralized CSS styles
+│   │   │   ├── Navbar.css
+│   │   │   ├── BlogCard.css
+│   │   │   ├── Home.css
+│   │   │   ├── Auth.css
+│   │   │   ├── BlogForm.css
+│   │   │   ├── BlogDetail.css
+│   │   │   └── MyBlogs.css
 │   │   ├── App.jsx             # Main app component
 │   │   ├── App.css             # Global styles
-│   │   ├── index.js            # Entry point
+│   │   ├── main.jsx            # Entry point
 │   │   └── index.css           # Base styles
 │   ├── .gitignore
 │   └── package.json            # Frontend dependencies
-│
-├── .gitignore                  # Root gitignore
 └── README.md                   # Documentation
 ```
-
 
 ## Built with ❤️ using the MERN Stack
 Happy Blogging! 🚀📝
